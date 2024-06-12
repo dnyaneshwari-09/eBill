@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <title>eBill Signup</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center align-items-center min-vh-100">
+        <div class="col-md-8">
+          <div class="card bg-light">
+            <div class="card-body">
+              <form action="/submit_login" method="post">
+                <fieldset>
+                  <legend class="text-center mb-4">eBill Registration</legend>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="exampleInputname">First name</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="exampleInputname"
+                          placeholder="Enter first name"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="exampleInputlastname">Last name</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="exampleInputlastname"
+                          placeholder="Enter last name"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                          placeholder="Enter email"
+                        />
+                        <small id="emailHelp" class="form-text text-muted"
+                          >We'll never share your email with anyone else.</small
+                        >
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="exampleInputPassword1"
+                          placeholder="Password"
+                          autocomplete="off"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label for="addressCountry">Country</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="addressCountry"
+                          placeholder="Enter country"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label for="addressState">State</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="addressState"
+                          placeholder="Enter state"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label for="addressCity">City</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="addressCity"
+                          placeholder="Enter city"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row justify-content-center">
+                    <div class="col-md-4">
+                      <button type="button" class="btn btn-primary btn-lg btn-block mt-4">
+                        Signup
+                      </button>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

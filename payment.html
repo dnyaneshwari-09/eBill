@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Payment</title>
+</head>
+<body>
+    <h1>Pay Your Bill</h1>
+    <form action="/submit_payment" method="post">
+        <div>
+            <label for="customer_id">Customer ID:</label>
+            <input type="number" id="customer_id" name="customer_id" required>
+        </div>
+        <div>
+            <label for="Sub_division_code">Sub division code :</label>
+            <input type="number" id="Sub_division_code" name="Sub_division_code" required>
+        </div>
+
+
+        <div>
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" name="amount" required>
+        </div>
+
+        <div>
+            <label for="payment_method">Payment Method:</label>
+            <select id="payment_method" name="payment_method" required>
+                <option value="credit_card">Credit Card</option>
+                <option value="debit_card">Debit Card</option>
+                <option value="net_banking">Net Banking</option>
+                <option value="upi">UPI</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="card_number">Card Number:</label>
+            <input type="text" id="card_number" name="card_number" required>
+        </div>
+
+        <div>
+            <label for="expiry_date">Expiry Date:</label>
+            <input type="month" id="expiry_date" name="expiry_date" required>
+        </div>
+
+        <div>
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required>
+        </div>
+
+        <div>
+            <label for="name_on_card">Name on Card:</label>
+            <input type="text" id="name_on_card" name="name_on_card" required>
+        </div>
+
+        <div>
+            <input type="submit" value="Pay Now">
+        </div>
+    </form>
+</body>
+</html>
